@@ -1,3 +1,3 @@
-# lab-08-better-viz
+# lab07_betterviz
 
 template materials for lab
