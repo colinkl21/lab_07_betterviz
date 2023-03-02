@@ -86,9 +86,8 @@ merged_data$nomask <- merged_data$count.y
 maskd <- read_csv("C:/Users/Colin/Downloads/mask.csv")
 
 
-m<-ggplot(maskd, aes(x = date, y = cases, group = condition, color = condition)) + geom_line(linewidth = 2) + scale_color_nejm() + theme(panel.background = element_rect(fill = "white", colour = "grey50"), legend.key = element_rect(fill = "white", color = NA)) + ggtitle("Kansas COVID-19 7-Day Rolling Average of Daily Cases/Per 100K Population") + theme(strip.background = element_rect(fill="white"), strip.text = element_text(size = 10, face = "bold")) + labs(subtitle = "Mask Counties Vs. No-Mask Mandate Counties", x = "Date", y = "Cases", color = "County Mask Requirement")
+m<-ggplot(maskd, aes(x = date, y = cases, group = condition, color = condition)) + geom_line(linewidth = 2) + scale_color_nejm() + theme(axis.text.x = element_text(angle = 50, hjust = 1), panel.background = element_rect(fill = "white", colour = "grey50"), legend.key = element_rect(fill = "white", color = NA)) + ggtitle("Kansas COVID-19 7-Day Rolling Average of Daily Cases/Per 100K Population") + theme(strip.background = element_rect(fill="white"), strip.text = element_text(size = 10, face = "bold")) + labs(subtitle = "Mask Counties Vs. No-Mask Mandate Counties", x = "Date", y = "Cases", color = "County Mask Requirement")
 
-#the x axis looks crowded but once you open the graph in a separate window it actually looks okay. 
 
 m
 
