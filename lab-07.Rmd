@@ -2,7 +2,7 @@
 title: "Lab 07 - Conveying the right message through visualisation"
 author: "Colin Li"
 date: "3/1/2023"
-output: github_document
+output: html_document
 ---
 
 ### Load packages and data
@@ -94,10 +94,10 @@ m
 
 
 #I hate to do this every time, but it is really tempting to make this graph interactive
-#ggplotly(m)
+ggplotly(m)
 
 ```
 
 
 The biggest problem with the old graph is that y axis on the left and y axis on the right side represent different values. My graph solved this problem, it is consistent and clear. Also, my graph shows the starting point or baseline for no mask vs. masked counties are very different. Mask mandate counties have higher daily cases to begin with than no mask counties.
-What this tells us is wearing masks worked for county with high covid cases becasue there's a huge drop in covid cases in the beginning and the end of the red line. We cannot really evaluate the effects of masks on no mask counties because they don't wear masks anyway. 
+What this tells us is wearing masks worked for counties with high covid cases because there's a huge drop in covid cases in the beginning and the end of the red line. We cannot really evaluate the effects of masks on no mask counties because they don't need to wear masks anyway. 
